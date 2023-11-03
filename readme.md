@@ -1,90 +1,108 @@
-# Solito with Expo Router Example Monorepo 🕴
+# Solito gluestack-ui Head Starter Kit 🚀
 
-```sh
-npx create-solito-app@latest -t with-expo-router
+A comprehensive starter kit to kick-start your next mobile application using [Expo](https://expo.io/), [Nextjs](https://nextjs.org/) and [gluestack-ui](https://ui.gluestack.io) - your one-stop solution for faster, smoother, and better mobile and web development.
+
+## Demo
+
+See the live demo of this starter kit at [Demo Link](https://gluestack-ui-solito-head-starter-kit.vercel.app/).
+
+## 👩‍💻 Built with
+
+- [gluestack-ui](https://ui.gluestack.io)
+- [solito](https://solito.dev/)
+- [Expo](https://expo.io/)
+- [Expo Router V2](https://blog.expo.dev/introducing-expo-router-v2-3850fd5c3ca1)
+- [Nextjs](https://nextjs.org/)
+- [Next Navigation](https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating)
+- [TypeScript](https://www.typescriptlang.org/)
+
+## 🌟 Features
+
+- **Seamless Integration**: Get up and running with Solito(Nextjs + Expo) and gluestack-ui in no time.
+- **Modular Architecture**: Built with scalability in mind to cater to both small and large projects.
+- **Preconfigured Navigation**: Includes preconfigured navigation patterns using [Expo Router V2](https://blog.expo.dev/introducing-expo-router-v2-3850fd5c3ca1) and [Next/Navigation](https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating)
+- **Theming & Styling**: Customizable themes using gluestack-ui components.
+- **Detailed Documentation**: Comprehensive documentation to guide you through every step.
+- **Extensive form handling**: Extensive implementation of handling forms and validations.
+- **Preconfigured linting rules**: Comprehensive linting rules.
+- **Preconfigured editor configurations**: Widely accepted editor configuration.
+
+## 📷 Screenshots
+
+Please find the screenshots in the `head-starter-kit-screenshots` folder.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/)
+- [Expo CLI](https://expo.io/tools#cli)
+
+### Installation
+
+```bash
+# Clone the repository
+
+## Using SSH
+git clone git@github.com:gluestack/solito-head-starter-kit.git
+
+## Using HTTPS
+git clone https://github.com/gluestack/solito-head-starter-kit.git
+
+# Navigate into the directory
+cd solito-head-starter-kit
+
+# Install dependencies
+yarn install
+
+# To start expo development server
+yarn native
+
+# To start next development server
+yarn web
 ```
 
-And just like that, you now have an Expo + Next.js app using Expo Router.
+## 🌈 Applying Fonts in your application
 
-## ⚡️ Instantly clone & deploy
+You already have the font loaded in your application, now you can apply the font in your application.
+For more info, check [this](https://gluestack.io/ui/docs/advanced/fonts)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fnandorojo%2Fsolito%2Ftree%2Fmaster%2Fexample-monorepos%2Fwith-expo-router&project-name=solito-app&repo-name=solito-app&demo-title=Solito%20App%20⚡%EF%B8%8F&demo-description=React%20Native%20%2B%20Next.js%20starter%20with%20Solito.%20Made%20by%20Fernando%20Rojo.&demo-url=https%3A%2F%2Fsolito.dev%2Fstarter&demo-image=https%3A%2F%2Fsolito.dev%2Fimg%2Fog.png&build-command=cd+..%2F..%3Bnpx+turbo+run+build+--filter%3Dnext-app)
+Add the font name in the `gluestack.config.js` file in the `fonts` object.
 
-## 🔦 About
-
-This monorepo is a starter for an Expo + Next.js app using [Expo Router](https://expo.github.io/router/) to enable a file-system based routing in native apps. The API is very Next.js- and Remix-esque. I view it as the future of cross-platform routing.
-
-## 📦 Included packages
-
-- `solito` for cross-platform navigation
-- `moti` for animations
-- `dripsy` for theming/design (you can bring your own, too)
-- Expo SDK 49
-- Next.js 13
-- Expo Router 2
-
-## 🗂 Folder layout
-
-- `apps` entry points for each app
-
-  - `expo`
-    - `app` you'll be creating files inside of `apps/expo/app` to use file system routing on iOS and Android.
-  - `next`
-
-- `packages` shared packages across apps
-  - `app` you'll be importing most files from `app/`
-    - `features` (don't use a `screens` folder. organize by feature.)
-    - `provider` (all the providers that wrap the app, and some no-ops for Web.)
-
-You can add other folders inside of `packages/` if you know what you're doing and have a good reason to.
-
-## 🏁 Start the app
-
-- Install dependencies: `yarn`
-
-- Next.js local dev: `yarn web`
-  - Runs `yarn next`
-- Expo local dev:
-  - First, build a dev client onto your device or simulator
-    - `cd apps/expo`
-    - Then, either `expo run:ios`, or `eas build`
-  - After building the dev client, from the root of the monorepo...
-    - `yarn native` (This runs `expo start --dev-client`)
-
-## 🆕 Add new dependencies
-
-### Pure JS dependencies
-
-If you're installing a JavaScript-only dependency that will be used across platforms, install it in `packages/app`:
-
-```sh
-cd packages/app
-yarn add date-fns
-cd ../..
-yarn
+```javascript
+fonts: {
+  heading: "inter",
+  body: "inter",
+  mono: "monospace",
+},
 ```
 
-### Native dependencies
+## 📖 Documentation
 
-If you're installing a library with any native code, you must install it in `apps/expo`:
+For a deep dive into the components, structure, and configurations, please refer to our [detailed documentation](https://ui.gluestack.io/docs/getting-started/installation).
 
-```sh
-cd apps/expo
-yarn add react-native-reanimated
+## 🙌 Contributing
 
-cd ../..
-yarn
+We welcome contributions! Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo, make changes and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the [MIT License](https://opensource.org/license/mit/).
+
+## ❤️ Acknowledgments
+
+- Thanks to the [Expo team](https://expo.io/) for creating an amazing platform.
+- Shoutout to [gluestack-ui contributors](https://gluestack.io/) for their outstanding work.
+
 ```
 
-You can also install the native library inside of `packages/app` if you want to get autoimport for that package inside of the `app` folder. However, you need to be careful and install the _exact_ same version in both packages. If the versions mismatch at all, you'll potentially get terrible bugs. This is a classic monorepo issue. I use `lerna-update-wizard` to help with this (you don't need to use Lerna to use that lib).
-
-## 🎙 About the creator
-
-Follow Fernando Rojo on Twitter: [@FernandoTheRojo](https://twitter.com/fernandotherojo)
-
-## 🧐 Why use Expo + Next.js?
-
-See my talk about this topic at Next.js Conf 2021:
-
-<a href="https://www.youtube.com/watch?v=0lnbdRweJtA"><img width="1332" alt="image" src="https://user-images.githubusercontent.com/13172299/157299915-b633e083-f271-48c6-a262-7b7eef765be5.png">
-</a>
+```
