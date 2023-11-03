@@ -1,25 +1,14 @@
-const { withExpo } = require('@expo/next-adapter')
-
 /** @type {import('next').NextConfig} */
+const { withGluestackUI } = require('@gluestack/ui-next-adapter')
+const { withExpo } = require('@expo/next-adapter')
 const nextConfig = {
-  // reanimated (and thus, Moti) doesn't work with strict mode currently...
-  // https://github.com/nandorojo/moti/issues/224
-  // https://github.com/necolas/react-native-web/pull/2330
-  // https://github.com/nandorojo/moti/issues/224
-  // once that gets fixed, set this back to true
-  reactStrictMode: false,
+  reactStrictMode: true,
   transpilePackages: [
-    'react-native',
-    'react-native-web',
     'solito',
-    'dripsy',
-    '@dripsy/core',
     'moti',
-    'app',
     'react-native-reanimated',
-    '@expo/html-elements',
-    'react-native-gesture-handler',
+    'lucide-react-native',
   ],
 }
 
-module.exports = withExpo(nextConfig)
+module.exports = withExpo(withGluestackUI(nextConfig))

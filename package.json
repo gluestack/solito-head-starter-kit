@@ -24,5 +24,13 @@
     "**/expo-router",
     "**/expo-router/**"
   ],
-  "packageManager": "yarn@3.4.1"
+  "packageManager": "yarn@3.4.1",
+  "dependencies": {
+    "@gluestack-style/react": "^1.0.11",
+    "@gluestack-ui/config": "latest",
+    "@gluestack-ui/themed": "^1.0.11",
+    "@gluestack/ui-next-adapter": "^2.1.10",
+    "react-native-svg": "13.4.0",
+    "react-native-web": "^0.19.9"
+  }
 }

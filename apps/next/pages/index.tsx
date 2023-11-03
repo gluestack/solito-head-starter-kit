@@ -1,3 +1,5 @@
-import { HomeScreen } from 'app/features/home/screen'
+import SplashScreen from '@gluestack/app/Login/SplashScreen'
 
-export default HomeScreen
+export default () => {
+  return <SplashScreen />
+}
