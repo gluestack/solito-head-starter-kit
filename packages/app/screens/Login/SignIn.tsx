@@ -198,8 +198,10 @@ const SignInForm = () => {
           <FormControlHelper></FormControlHelper>
         </FormControl>
       </VStack>
-      <Link href="/forgot-password" ml="auto">
-        <LinkText fontSize="$xs">Forgot password?</LinkText>
+      <Link href="/forgot-password">
+        <LinkText fontSize="$xs" ml="auto">
+          Forgot password?
+        </LinkText>
       </Link>
       <Controller
         name="rememberme"
@@ -245,7 +247,6 @@ function SideContainerWeb() {
       <Image
         w="$80"
         h="$10"
-        alt="gluestack-ui Pro"
         resizeMode="contain"
         source={require('./assets/images/gluestackUiProLogo_web_light.svg')}
         alt="gluestack ui pro logo"

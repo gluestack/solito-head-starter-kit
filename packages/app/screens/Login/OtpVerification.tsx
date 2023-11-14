@@ -52,7 +52,7 @@ function PinInput({
   return (
     <HStack space="xs">
       {Array.from({ length: 6 }, (_, index) => (
-        <Input key={index} variant="outline" w="$100/7" size="md">
+        <Input key={index} variant="outline" w={14} size="md">
           <InputField
             //@ts-ignore
             ref={refList[index]}
@@ -74,7 +74,7 @@ function PinInput({
                   focusedIndex === index ? '$primary500' : '$borderDark100',
               },
             }}
-            w="$100/7"
+            w={14}
             textAlign="center"
             maxLength={1}
             borderBottomWidth="$2"
@@ -332,7 +332,7 @@ export default function OtpVerification() {
         py="$8"
         px="$4"
         flex={1}
-        maxWidth="$508"
+        maxWidth={508}
       >
         <MainText />
         <VStack space="md" mt="$6">

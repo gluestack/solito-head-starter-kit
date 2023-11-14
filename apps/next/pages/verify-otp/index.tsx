@@ -1,5 +1,7 @@
 import OtpVerificationScreen from '@gluestack/app/Login/OtpVerification'
 
-export default () => {
+const Screen = () => {
   return <OtpVerificationScreen />
 }
+
+export default Screen

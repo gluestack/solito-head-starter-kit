@@ -2242,13 +2242,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gluestack-style/react@npm:^1.0.11":
-  version: 1.0.11
-  resolution: "@gluestack-style/react@npm:1.0.11"
+"@gluestack-style/react@npm:^1.0.15":
+  version: 1.0.15
+  resolution: "@gluestack-style/react@npm:1.0.15"
   dependencies:
     inline-style-prefixer: ^6.0.1
     normalize-css-color: ^1.0.2
-  checksum: e6f7b2f86a6922cf0e9133186168d31e0a8694a6ac75b26701a77252a8c21725f57178097bf83a2827e17d99230a4de5db304505481d156c6278fa5d685d711a
+  checksum: b76df776bfd36b3f58740791c9fc4fc2ea8d57078b9c01cb17eed68e1a8c9c6feae08b33b31ed36c77dc68476201565afcac1efd1442989b6502d6c970bb1c7b
   languageName: node
   linkType: hard
 
@@ -2352,7 +2352,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gluestack-ui/config@npm:latest":
+"@gluestack-ui/config@npm:^1.0.3":
   version: 1.0.3
   resolution: "@gluestack-ui/config@npm:1.0.3"
   peerDependencies:
@@ -2706,9 +2706,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gluestack-ui/themed@npm:^1.0.11":
-  version: 1.0.11
-  resolution: "@gluestack-ui/themed@npm:1.0.11"
+"@gluestack-ui/themed@npm:^1.0.13":
+  version: 1.0.13
+  resolution: "@gluestack-ui/themed@npm:1.0.13"
   dependencies:
     "@expo/html-elements": latest
     "@gluestack-style/animation-resolver": ^1.0.2
@@ -2753,7 +2753,7 @@ __metadata:
     react-native: ">=0.72"
     react-native-svg: ">=13.4.0"
     react-native-web: ">=0.19"
-  checksum: 35195ba10560f16fc7a9799379d28e04f850e9255cd2e0f905566c1e95e5ad0a2e35fa00fab2724b8d725473a4ccf7be5bb521e6f197d7b45b3b117136ecc770
+  checksum: 65a6136d9e16c45405f63eb1fccdafde8fd6623220054834678c4b56285637c40f7a94bed0934212a08771c6daaa82962d337c2599af94cbb8a6c795bfac98c7
   languageName: node
   linkType: hard
 
@@ -12750,9 +12750,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "solito-expo-router@workspace:."
   dependencies:
-    "@gluestack-style/react": ^1.0.11
-    "@gluestack-ui/config": latest
-    "@gluestack-ui/themed": ^1.0.11
+    "@gluestack-style/react": ^1.0.15
+    "@gluestack-ui/config": ^1.0.3
+    "@gluestack-ui/themed": ^1.0.13
     "@gluestack/ui-next-adapter": ^2.1.10
     "@types/react": ~18.2.21
     "@types/react-native": ^0.72.2

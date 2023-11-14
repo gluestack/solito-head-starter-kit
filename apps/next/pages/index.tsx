@@ -1,5 +1,7 @@
 import SplashScreen from '@gluestack/app/Login/SplashScreen'
 
-export default () => {
+const Screen = () => {
   return <SplashScreen />
 }
+
+export default Screen

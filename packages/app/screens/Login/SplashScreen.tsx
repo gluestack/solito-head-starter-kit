@@ -93,8 +93,8 @@ function HeaderLogo() {
         alt="gluestack-ui Pro"
         display="flex"
         source={require('./assets/images/gluestackUiProLogo_mobile.png')}
-        w="$275"
-        h="$141"
+        w={275}
+        h={141}
       />
     </Box>
   )
@@ -106,9 +106,9 @@ export default function SplashScreen() {
     <GuestLayout>
       <Center w="$full" flex={1}>
         <Box
-          maxWidth="$508"
+          maxWidth={508}
           w="$full"
-          minHeight="$authcard"
+          minHeight={544}
           sx={{
             '@md': {
               px: '$8',

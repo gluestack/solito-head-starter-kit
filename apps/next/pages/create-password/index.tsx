@@ -1,5 +1,6 @@
 import CreatePasswordScreen from '@gluestack/app/Login/CreatePassword'
 
-export default () => {
+const Screen = () => {
   return <CreatePasswordScreen />
 }
+export default Screen

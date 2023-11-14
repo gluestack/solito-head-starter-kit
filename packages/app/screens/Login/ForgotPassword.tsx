@@ -81,7 +81,7 @@ function SideContainerWeb() {
     >
       <Image
         resizeMode="contain"
-        w="$200"
+        w={200}
         h="$40"
         source={require('./assets/images/forgotPassword_web_dark.png')}
         alt="Alternate Text"
@@ -198,7 +198,7 @@ export default function ForgotPassword() {
           <SideContainerWeb />
         </Box>
         <Box
-          maxWidth="$508"
+          maxWidth={508}
           pt="$0"
           pb="$8"
           px="$4"

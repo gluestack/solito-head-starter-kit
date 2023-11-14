@@ -268,6 +268,7 @@ export default function CreatePassword() {
                         type={showPassword ? 'text' : 'password'}
                       />
                       <InputSlot onPress={handleState} mr="$2">
+                        {/* @ts-ignore */}
                         <InputIcon as={showPassword ? EyeIcon : EyeOffIcon} />
                       </InputSlot>
                     </Input>
