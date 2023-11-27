@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react'
 import {
   Center,
@@ -48,7 +50,7 @@ import { GoogleIcon, FacebookIcon } from './assets/Icons/Social'
 
 import GuestLayout from '../../layouts/GuestLayout'
 
-import { useRouter } from 'solito/router'
+import { useRouter } from 'solito/navigation'
 
 const signInSchema = z.object({
   email: z.string().min(1, 'Email is required').email(),
