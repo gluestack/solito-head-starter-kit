@@ -30,7 +30,7 @@
     "@gluestack-ui/config": "^1.0.3",
     "@gluestack-ui/themed": "^1.0.13",
     "@gluestack/ui-next-adapter": "^2.1.10",
-    "react-native-svg": "13.4.0",
+    "react-native-svg": "^14.0.0",
     "react-native-web": "^0.19.9"
   }
 }
